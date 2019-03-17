@@ -62,6 +62,6 @@ uint32_t CalcHash (char *str)
         count++;
     }
 
-    return initialHash | ( (sum1 * sum2) 0xFFFFFF );
+    return initialHash | ( (sum1 * sum2) & 0xFFFFFF );
 }
 ```
